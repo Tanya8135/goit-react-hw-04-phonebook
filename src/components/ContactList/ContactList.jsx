@@ -7,7 +7,6 @@ const ContactList = ({ contacts, onDeleteContact }) => (
     {contacts.map(contact => (
       <li className={style.list} key={contact.id}>
         {contact.name} ({contact.number}){' '}
-        {/* Оновлено: додано відображення номера */}
         <button
           className={style.btnDelete}
           type="button"
